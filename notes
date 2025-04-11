@@ -1,0 +1,18 @@
+document.getElementById('light-theme').addEventListener('change', toggleTheme);
+document.getElementById('dark-theme').addEventListener('change', toggleTheme);
+function toggleTheme() {
+    const lightThemeRadio = document.getElementById('light-theme');
+    const darkThemeRadio = document.getElementById('dark-theme');
+    const body = document.body;
+
+    // Check which radio button is selected and apply the corresponding theme
+    if (lightThemeRadio.checked) {
+        body.classList.add('light-theme');
+        body.classList.toggle('dark-theme');
+        localStorage.setItem('theme', 'light');
+    } else if (darkThemeRadio.checked) {
+        body.classList.add('dark-theme');
+        body.classList.toggle('light-theme');
+        localStorage.setItem('theme', 'dark');
+    }
+}
