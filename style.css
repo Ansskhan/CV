@@ -1,30 +1,30 @@
-.Mbox{
+.Mbox {
     display: flex;
 }
-.child1{
- width: 25%;
 
- min-width: 150px;
+.child1 {
+    width: 25%;
+    min-width: 150px;
 }
-.img{
+
+.img {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 150px;
     flex-direction: column;
 }
-img{
+
+img {
     margin-top: 5px;
-
     border-radius: 150px;
-
 }
-.child2{
+
+.child2 {
     width: 75%;
-
-  
 }
-hr{
+
+hr {
     padding: 1px;
     color: red;
     margin-top: 5px;
@@ -32,29 +32,36 @@ hr{
 
     background-color: rosybrown;
 }
-.info{
+
+.info {
     margin-top: 15px;
 }
-h1,h2,h3{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+h1,
+h2,
+h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-h3{
-    
-}
-p{
+
+h3 {}
+
+p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-span{
+
+span {
     display: flex;
 }
-.child1 span i{
+
+.child1 span i {
     margin-top: 7px;
     margin-left: 8px;
     margin-right: 8px;
 
     font-size: larger
 }
-.child2  span i{
+
+.child2 span i {
     margin-top: px;
     margin-left: 8px;
     margin-right: 8px;
@@ -62,33 +69,56 @@ span{
 }
 
 
-.dark-theme .child1{
-    transition: background-color 0.5s ease, color 0.5s ease; 
+.dark-theme .child1 {
+    transition: background-color 0.5s ease, color 0.5s ease;
     background-color: black;
     color: white;
 }
-.dark-theme .child2{
-    transition: background-color 0.5s ease, color 0.5s ease; 
+
+.dark-theme .child2 {
+    transition: background-color 0.5s ease, color 0.5s ease;
     background-color: darkslategray;
-    color:antiquewhite;
+    color: antiquewhite;
 }
-.dark-theme .child2 span i{
+
+.dark-theme .child2 span i {
     color: black;
 }
-.dark-theme .child1 img{
+
+.dark-theme .child1 img {
     border: 3px solid darkslategray;
 }
-.light-theme .child1{
-    transition: background-color 0.5s ease, color 0.5s ease; 
+
+.light-theme .child1 {
+    transition: background-color 0.5s ease, color 0.5s ease;
     background-color: royalblue;
-    color:bisque;
+    color: bisque;
 }
-.light-theme .child2{
-    transition: background-color 0.5s ease, color 0.5s ease; 
-    background-color:gainsboro;
+
+.light-theme .child2 {
+    transition: background-color 0.5s ease, color 0.5s ease;
+    background-color: gainsboro;
     color: darkslateblue;
 }
-.light-theme .child1 img{
+
+.light-theme .child1 img {
     border: 3px solid darkslategray;
-    
+
+}
+
+p {
+    opacity: 0;
+    transform: translateY(10px);
+    animation-name: FadeInUp;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes FadeInUp {
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
 }
