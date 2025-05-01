@@ -11,12 +11,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 150px;
     flex-direction: column;
 }
 
 img {
     margin-top: 5px;
+    height: 250px;
+    width: 250px;
     border-radius: 150px;
 }
 
@@ -114,7 +115,12 @@ p {
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
-
+ul a {
+    color: white;
+}
+ul a:hover {
+    color: darkblue;
+}
 @keyframes FadeInUp {
     to{
         transform: translateY(0px);
